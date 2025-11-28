@@ -25,6 +25,7 @@ target_column = "price_improvement"
 exchange_column = "lastmkt"
 min_rows_per_exchange = 200
 
+
 def load_training_dataframe(path: str = "executions_with_nbbo.parquet") -> pd.DataFrame:
     """
     Load the engineered dataset and prepare it for model training.
