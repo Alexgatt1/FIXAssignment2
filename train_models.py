@@ -51,3 +51,4 @@ def load_training_dataframe(path: str = "executions_with_nbbo.parquet") -> pd.Da
     )
 
     return dataframe
+print("This is working")
