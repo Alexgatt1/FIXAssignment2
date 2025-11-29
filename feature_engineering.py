@@ -12,10 +12,12 @@ def main() -> None:
     executions_df = pd.read_csv(
         executions_path,
         dtype={"Side": "category"},
+        nrows=1_000_000,
     )
     quotes_df = pd.read_csv(
         quotes_path,
         dtype={"ticker": "category"},
+        nrows=1_000_000,
     )
 
     executions_df["order_time"] = pd.to_datetime(

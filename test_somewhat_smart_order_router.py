@@ -47,8 +47,8 @@ def test_best_price_improvement_corner_case_zero_quantity() -> None:
     try:
         best_exchange, predicted_improvement = best_price_improvement(
             symbol="AAPL",
-            side="S",      # sell side here, just to exercise both paths
-            quantity=0,    # corner case
+            side="S",      
+            quantity=0,   
             limit_price=190.00,
             bid_price=189.90,
             ask_price=190.10,
